@@ -10,6 +10,16 @@ module.exports = {
                     { property: "type", select: { equals: "Post" } },
                 ],
             },
+            sorts: [
+                {
+                    property: "date",
+                    direction: "ascending",
+                },
+            ],
+            catalog: {
+                enable: true,
+                property: "category",
+            },
         },
     },
     deploy: {

@@ -10,6 +10,12 @@ module.exports = {
                     { property: "type", select: { equals: "Post" } },
                 ],
             },
+            sorts: [
+                {
+                    property: "date",
+                    direction: "ascending",
+                },
+            ],
         },
     },
     deploy: {
@@ -22,6 +28,15 @@ module.exports = {
         },
     },
     image: {
-        enable: false,
+        enable: true,
+        platform: "github",
+        github: {
+            token: process.env.GITHUB_TOKEN,
+            user: process.env.ELOG_GITHUB_USER,
+            repo: process.env.ELOG_GITHUB_REPO,
+            host: "cdn.jsdelivr.net",
+            // 当前日期
+            prefixKey: new Date().toISOString().split("T")[0],
+        },
     },
 };

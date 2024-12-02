@@ -28,6 +28,10 @@ jobs:
                   export TZ='Asia/Shanghai'
                   npm install --prod
 
+            - name: Use GitHub Token
+              run: |
+                  echo ${{ secrets.GITHUB_TOKEN }}
+
             - name: 拉取文档
               env:
                   NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}

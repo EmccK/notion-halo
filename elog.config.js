@@ -35,7 +35,7 @@ module.exports = {
             user: process.env.ELOG_GITHUB_USER,
             repo: process.env.ELOG_GITHUB_REPO,
             host: "cdn.jsdelivr.net",
-            // 当前日期
+            // 当前日期,试一下
             prefixKey: new Date().toISOString().split("T")[0],
         },
     },

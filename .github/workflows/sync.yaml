@@ -28,10 +28,6 @@ jobs:
                   export TZ='Asia/Shanghai'
                   npm install --prod
 
-            - name: Use GitHub Token
-              run: |
-                  echo ${{ secrets.GITHUB_TOKEN }}
-
             - name: 拉取文档
               env:
                   NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
@@ -39,6 +35,9 @@ jobs:
                   HALO_ENDPOINT: ${{ secrets.HALO_ENDPOINT }}
                   HALO_TOKEN: ${{ secrets.HALO_TOKEN }}
                   HALO_POLICY_NAME: ${{ secrets.HALO_POLICY_NAME }}
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                  ELOG_GITHUB_USER: ${{ secrets.ELOG_GITHUB_USER }}
+                  ELOG_GITHUB_REPO: ${{ secrets.ELOG_GITHUB_REPO }}
               run: |
                   npm run sync:halo
 

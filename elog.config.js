@@ -31,7 +31,7 @@ module.exports = {
         enable: true,
         platform: "github",
         github: {
-            token: process.env.ELOG_GITHUB_TOKEN,
+            token: process.env.GITHUB_TOKEN,
             user: process.env.ELOG_GITHUB_USER,
             repo: process.env.ELOG_GITHUB_REPO,
             host: "cdn.jsdelivr.net",

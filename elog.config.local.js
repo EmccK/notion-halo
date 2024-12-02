@@ -16,30 +16,27 @@ module.exports = {
                     direction: "ascending",
                 },
             ],
-            catalog: {
-                enable: true,
-                property: "category",
-            },
         },
     },
     deploy: {
-        platform: "local",
-        local: {
-            outputDir: "./docs",
-            filename: "title",
-            format: "markdown",
-            frontMatter: {
-                enable: true,
-                exclude: ["cover"],
-            },
+        platform: "halo",
+        halo: {
+            endpoint: process.env.HALO_ENDPOINT,
+            token: process.env.HALO_TOKEN,
+            policyName: process.env.HALO_POLICY_NAME,
+            needUploadImage: false,
         },
     },
     image: {
         enable: true,
-        platform: "local",
-        local: {
-            outputDir: "./images",
-            pathFollowDoc: true,
+        platform: "github",
+        github: {
+            token: process.env.GITHUB_TOKEN,
+            user: process.env.ELOG_GITHUB_USER,
+            repo: process.env.ELOG_GITHUB_REPO,
+            host: "cdn.jsdelivr.net",
+            // 当前日期,试一下
+            prefixKey: new Date().toISOString().split("T")[0],
         },
     },
 };

@@ -47,11 +47,10 @@ jobs:
                   git config --global user.email "wangkai9799@gmail.com"
 
             - name: 提交拉取的文档到GitHub仓库
+              env:
+                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
               run: |
                   echo `date +"%Y-%m-%d %H:%M:%S"` begin > time.txt
                   git add .
                   git commit -m "Refresh elog.cache.json" -a
-
-            - name: Push changes
-              run: |
                   git push

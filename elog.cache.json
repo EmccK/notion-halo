@@ -330,7 +330,7 @@
     {
       "id": "15326e1e-824f-80c4-8aa9-e79ed15a3f30",
       "doc_id": "15326e1e-824f-80c4-8aa9-e79ed15a3f30",
-      "updated": 1733410560000,
+      "updated": 1733411040000,
       "properties": {
         "password": "",
         "public": true,
@@ -350,8 +350,8 @@
         "excerpt": "",
         "title": "Rime输入法配置",
         "status": "Published",
-        "cover": "https://tuapi.eees.cc/api.php?category=biying&type=302",
-        "updated": "2024-12-05 22:56:00"
+        "cover": "https://cn.bing.com/th?id=OHR.MonoTufa_ZH-CN4998806540_UHD.jpg&rf=LaDigue_UHD.jpg&pid=hp&w=3840&h=2160&rs=1&c=4",
+        "updated": "2024-12-05 23:04:00"
       }
     }
   ],
@@ -1038,7 +1038,7 @@
       "object": "page",
       "id": "15326e1e-824f-80c4-8aa9-e79ed15a3f30",
       "created_time": "2024-12-05T14:29:00.000Z",
-      "last_edited_time": "2024-12-05T14:56:00.000Z",
+      "last_edited_time": "2024-12-05T15:04:00.000Z",
       "created_by": {
         "object": "user",
         "id": "76f3cb44-b89c-4896-9316-deeab70484d0"
@@ -1050,7 +1050,7 @@
       "cover": {
         "type": "external",
         "external": {
-          "url": "https://tuapi.eees.cc/api.php?category=biying&type=302"
+          "url": "https://cn.bing.com/th?id=OHR.MonoTufa_ZH-CN4998806540_UHD.jpg&rf=LaDigue_UHD.jpg&pid=hp&w=3840&h=2160&rs=1&c=4"
         }
       },
       "icon": {
@@ -1082,8 +1082,8 @@
         "excerpt": "",
         "title": "Rime输入法配置",
         "status": "Published",
-        "cover": "https://tuapi.eees.cc/api.php?category=biying&type=302",
-        "updated": "2024-12-05 22:56:00"
+        "cover": "https://cn.bing.com/th?id=OHR.MonoTufa_ZH-CN4998806540_UHD.jpg&rf=LaDigue_UHD.jpg&pid=hp&w=3840&h=2160&rs=1&c=4",
+        "updated": "2024-12-05 23:04:00"
       },
       "url": "https://www.notion.so/Rime-15326e1e824f80c48aa9e79ed15a3f30",
       "public_url": "https://emcck.notion.site/Rime-15326e1e824f80c48aa9e79ed15a3f30"

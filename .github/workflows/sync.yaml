@@ -35,7 +35,7 @@ jobs:
                   HALO_ENDPOINT: ${{ secrets.HALO_ENDPOINT }}
                   HALO_TOKEN: ${{ secrets.HALO_TOKEN }}
                   HALO_POLICY_NAME: ${{ secrets.HALO_POLICY_NAME }}
-                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                  GITHUB_TOKEN: ${{ secrets.ELOG_GITHUB_TOKEN }}
                   ELOG_GITHUB_USER: ${{ secrets.ELOG_GITHUB_USER }}
                   ELOG_GITHUB_REPO: ${{ secrets.ELOG_GITHUB_REPO }}
                   ELOG_GITHUB_TOKEN: ${{ secrets.ELOG_GITHUB_TOKEN }}
@@ -49,7 +49,7 @@ jobs:
 
             - name: 提交拉取的文档到GitHub仓库
               env:
-                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                  GITHUB_TOKEN: ${{ secrets.ELOG_GITHUB_TOKEN }}
               run: |
                   echo `date +"%Y-%m-%d %H:%M:%S"` begin > time.txt
                   git add .

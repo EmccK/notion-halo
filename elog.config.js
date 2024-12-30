@@ -25,6 +25,7 @@ module.exports = {
             token: process.env.HALO_TOKEN,
             policyName: process.env.HALO_POLICY_NAME,
             needUploadImage: false,
+            rowType: 'markdown',
         },
     },
     image: {

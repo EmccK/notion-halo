@@ -38,6 +38,7 @@ jobs:
                   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
                   ELOG_GITHUB_USER: ${{ secrets.ELOG_GITHUB_USER }}
                   ELOG_GITHUB_REPO: ${{ secrets.ELOG_GITHUB_REPO }}
+                  ELOG_GITHUB_TOKEN: ${{ secrets.ELOG_GITHUB_TOKEN }}
               run: |
                   npm run sync:halo
 
